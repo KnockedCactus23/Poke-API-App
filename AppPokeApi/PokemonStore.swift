@@ -5,14 +5,24 @@
 //  Created by Sergio Rodríguez Pérez on 03/10/25.
 //
 
-import SwiftUI
+import Foundation
+import Combine
 
-struct PokemonStore: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+@MainActor
+class PokemonStore: ObservableObject {
+    @Published var favorites: [Pokemon] = []
+    
+    func toggleFavorite(_ pokemon: Pokemon) {
+        if let index = favorites.firstIndex(where: { $0.id == pokemon.id }) {
+            // Si ya estaba en favoritos → lo quitamos
+            favorites.remove(at: index)
+        } else {
+            // Si no está → lo agregamos
+            favorites.append(pokemon)
+        }
     }
-}
-
-#Preview {
-    PokemonStore()
+    
+    func isFavorite(_ pokemon: Pokemon) -> Bool {
+        return favorites.contains(where: { $0.id == pokemon.id })
+    }
 }

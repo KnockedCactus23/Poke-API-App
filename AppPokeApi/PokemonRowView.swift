@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct PokemonRowView: View {
+    let pokemon: Pokemon
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            AsyncImage(url: URL(string: pokemon.sprites.front_default ?? "")) { image in
+                image.resizable()
+                     .scaledToFit()
+            } placeholder: {
+                ProgressView()
+            }
+            .frame(width: 80, height: 80)
+            
+            Text(pokemon.name.capitalized)
+                .font(.headline)
+        }
     }
-}
-
-#Preview {
-    PokemonRowView()
 }
