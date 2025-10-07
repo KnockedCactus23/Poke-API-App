@@ -55,5 +55,5 @@ https://pokeapi.co/api/v2/pokemon/{id}
 4. **Ejecuta la app presionando el botón de play o usando *Cmd + R***
 
 ## 📄 Créditos
-API: [https://pokeapi.co](PokéAPI)
+API: [Poke API](https://pokeapi.co)
 Desarrollado por: Sergio Rodríguez Pérez
