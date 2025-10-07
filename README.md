@@ -56,4 +56,4 @@ https://pokeapi.co/api/v2/pokemon/{id}
 
 ## 📄 Créditos
 API: [Poke API](https://pokeapi.co)
-Desarrollado por: Sergio Rodríguez Pérez
+Aplicación desarrollada por: Sergio Rodríguez Pérez
