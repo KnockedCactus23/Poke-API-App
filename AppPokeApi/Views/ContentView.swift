@@ -10,25 +10,28 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
+        // Tab para moverse entre pestañas (Home, Favorites, Teams)
         TabView {
-            HomeView()
+            HomeView() // Vista Inicial
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
             
-            FavoritesView()
+            FavoritesView() // Vista de Favoritos
                 .tabItem {
                     Label("Favorites", systemImage: "star.fill")
                 }
             
-            TeamView()
+            TeamsView() // Vista de Equipos
                 .tabItem {
-                    Label("Team", systemImage: "person.3.fill")
+                    Label("Teams", systemImage: "person.3.fill")
                 }
         }
+        
     }
 }
 
 #Preview {
     ContentView()
+        .environmentObject(PokemonStore())
 }
