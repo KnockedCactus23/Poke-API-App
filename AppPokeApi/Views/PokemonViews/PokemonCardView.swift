@@ -9,7 +9,7 @@ import SwiftUI
 
 // Vista que muestra una tarjeta para un pokémon
 struct PokemonCardView: View {
-    let pokemon: Pokemon // Objeto pokémon
+    let pokemon: Pokemon // Pokémon que muestra la tarjeta
 
     var body: some View {
         ZStack {

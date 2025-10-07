@@ -30,7 +30,7 @@ struct CreateTeamView: View {
                 .ignoresSafeArea()
                 
                 VStack(spacing: 30) {
-                    // Encabezado visual
+                    // Encabezado
                     VStack(spacing: 8) {
                         Image(systemName: "person.3.sequence.fill")
                             .font(.system(size: 60))

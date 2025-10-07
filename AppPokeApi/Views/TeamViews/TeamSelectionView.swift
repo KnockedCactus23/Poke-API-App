@@ -58,7 +58,7 @@ struct TeamSelectionView: View {
                         .padding()
                     } else {
                         List {
-                            // Se permite agregar pokémones a los equipos disponibles si no están al máximod de su capacidad
+                            // Se permite agregar pokémones a los equipos disponibles si no están al máximo de su capacidad
                             ForEach(store.teams) { team in
                                 Button(action: {
                                     store.addPokemon(pokemon, to: team)

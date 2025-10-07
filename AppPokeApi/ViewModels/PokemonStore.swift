@@ -34,7 +34,7 @@ class PokemonStore: ObservableObject {
     func addPokemon(_ pokemon: Pokemon, to team: Team) {
         // Agrega el pokémon al equipo, si este no se encuentra en el
         guard let index = teams.firstIndex(where: { $0.id == team.id }) else { return }
-        // Evita duplicados y máximo 6 pokémon
+        // Evita duplicados y máximo 6 pokémones
         if !teams[index].pokemons.contains(where: { $0.id == pokemon.id }) &&
             teams[index].pokemons.count < 6 {
             teams[index].pokemons.append(pokemon)
