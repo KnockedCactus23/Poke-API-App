@@ -48,8 +48,8 @@ https://pokeapi.co/api/v2/pokemon/{id}
    ```
 2. **Abre el proyecto en Xcode**
     ```bash
-    cd PokedexApp
-    open PokedexApp.xcodeproj
+    cd AppPokeApi
+    open AppPokeApi.xcodeproj
     ```
 3. **Selecciona un simulador de iPhone (por ejemplo, iPhone 17)**
 4. **Ejecuta la app presionando el botón de play o usando *Cmd + R***
