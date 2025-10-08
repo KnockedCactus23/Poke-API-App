@@ -44,7 +44,7 @@ https://pokeapi.co/api/v2/pokemon/{id}
 
 1. **Clona el repositorio**
    ```bash
-   git clone https://github.com/tuusuario/PokedexApp.git
+   git clone https://github.com/tuusuario/Poke-API-App.git
    ```
 2. **Abre el proyecto en Xcode**
     ```bash
